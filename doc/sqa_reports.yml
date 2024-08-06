@@ -1,6 +1,27 @@
 Applications:
     swiftlet:
         app_types:
-            - SwiftletApp
+            - Swiftlet
         content_directory: ${ROOT_DIR}/doc/content
+        remove:
+            - ${MOOSE_DIR}/framework/doc/remove.yml
         log_default: WARNING
+        show_warning: false
+
+Documents:
+    software_requirements_specification: sqa/swiftlet_srs.md
+    software_design_description: sqa/swiftlet_sdd.md
+    software_test_plan: sqa/swiftlet_stp.md
+    requirements_traceability_matrix: sqa/swiftlet_rtm.md
+    verification_validation_report: sqa/swiftlet_vvr.md
+    failure_analysis_report: sqa/swiftlet_far.md
+    software_library_list: sqa/swiftlet_sll.md
+    log_default: WARNING
+    show_warning: false
+
+Requirements:
+    swiftlet:
+        directories:
+            - ${ROOT_DIR}/test
+        log_default: WARNING
+        show_warning: false
